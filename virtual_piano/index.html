@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>virtual-piano</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon/piano_icon-icons.com_60187.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-wrapper">
+                <h1 class="header-text">Virtual-Piano</h1>
+            </div>
+        </header>
+        <main class="main notes">
+            <div class="main-wrapper">
+                <div class="main-btn-switch">
+                    <button class="switch-btn switch-btn-notes switchBackground">Notes</button>
+                    <button class="switch-btn switch-btn-letters">Letters</button>
+                </div>
+                <div class="all-piano-btn">
+                    <div class="upper-btn-block">
+                        <div data-key="82" data-letter="R" data-note="c♯" class="btn-upper btn-piano"></div>
+                        <div data-key="84" data-letter="T" data-note="d♯" class="btn-upper btn-piano"></div>
+                        <div data-key="!#" class="btn-upper btn-piano"></div>
+                        <div data-key="85" data-letter="U" data-note="f♯" class="btn-upper btn-piano"></div>
+                        <div data-key="73" data-letter="I" data-note="g♯" class="btn-upper btn-piano"></div>
+                        <div data-key="79" data-letter="O" data-note="a♯" class="btn-upper btn-piano"></div>
+                    </div>
+                    <div class="lower-btn-block">
+                        <div data-key="68" data-letter="D" data-note="c" class="btn btn-piano btn-lower"></div>
+                        <div data-key="70" data-letter="F" data-note="d" class="btn btn-piano btn-lower"></div>
+                        <div data-key="71" data-letter="G" data-note="e" class="btn btn-piano btn-lower"></div>
+                        <div data-key="72" data-letter="H" data-note="f" class="btn btn-piano btn-lower"></div>
+                        <div data-key="74" data-letter="J" data-note="g" class="btn btn-piano btn-lower"></div>
+                        <div data-key="75" data-letter="K" data-note="a" class="btn btn-piano btn-lower"></div>
+                        <div data-key="76" data-letter="L" data-note="b" class="btn btn-piano btn-lower"></div>
+                    </div>
+                </div>
+                <audio id="75" class="sound" data-key="75" src="./assets/assets/audio/a.mp3" type="audio/mp3"></audio>
+                <audio id="79" class="sound" data-key="79" src="./assets/assets/audio/a♯.mp3" type="audio/mp3"></audio>
+                <audio id="76" class="sound" data-key="76" src="./assets/assets/audio/b.mp3" type="audio/mp3"></audio>
+                <audio id="68" class="sound" data-key="68" src="./assets/assets/audio/c.mp3" type="audio/mp3"></audio>
+                <audio id="82" class="sound" data-key="82" src="./assets/assets/audio/c♯.mp3" type="audio/mp3"></audio>
+                <audio id="70" class="sound" data-key="70" src="./assets/assets/audio/d.mp3" type="audio/mp3"></audio>
+                <audio id="84" class="sound" data-key="84" src="./assets/assets/audio/d♯.mp3" type="audio/mp3"></audio>
+                <audio id="71" class="sound" data-key="71" src="./assets/assets/audio/e.mp3" type="audio/mp3"></audio>
+                <audio id="72" class="sound" data-key="72" src="./assets/assets/audio/f.mp3" type="audio/mp3"></audio>
+                <audio id="85" class="sound" data-key="85" src="./assets/assets/audio/f♯.mp3" type="audio/mp3"></audio>
+                <audio id="74" class="sound" data-key="74" src="./assets/assets/audio/g.mp3" type="audio/mp3"></audio>
+                <audio id="73" class="sound" data-key="73" src="./assets/assets/audio/g♯.mp3" type="audio/mp3"></audio>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <div class="all-block">
+                    <ul class="github">
+                        <li class="github-img">
+                            <img src="./assets/assets/svg/github.svg" alt="icon_github">
+                        </li>
+                        <li class="gihub-link">
+                            <a href="https://github.com/rolling-scopes-school/zebnitskymax-JSFE2021Q1/tree/virtual-piano" class="link-repository">
+                                github
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="logo">
+                        <img src="./assets/assets/svg/rss.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
