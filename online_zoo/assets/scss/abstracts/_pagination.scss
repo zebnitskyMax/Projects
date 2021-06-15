@@ -1,0 +1,79 @@
+//---------------pagination
+
+.slider-pagination {
+    // color: #FEFEFE;
+    width: 245px;
+    display: inline-block;
+  
+    p {
+      margin-bottom: 20px;
+      text-align: center;
+  
+      b {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  
+    .progress-bar {
+      height: 5px;
+      background-color: rgba(255, 255, 255, 0.5);
+  
+      span {
+        display: block;
+        // background-color: #fff;
+        width: 30px;
+        height: 10px;
+        position: relative;
+        top: -3px;
+        left: 60px;
+  
+        // &:hover {
+        //   background-color: peru;
+        //   cursor: pointer;
+        // }
+      }
+    }
+  }
+  
+  
+  
+  .how-it-works__pagination{
+    .slider-pagination {
+      color: $color-bg-line-pagination2;
+      .progress-bar {
+          background-color: $color-bg-line-pagination2;
+  
+        span {
+          background-color: $color-bg-bar-pagination2;
+          width: 80px;
+          &:hover {
+            background-color: peru;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .favorites-wrapper{
+    .favorites-block-slider{
+      .slider-pagination {
+        color: $color-bg-line-pagination2;
+        .progress-bar {
+            background-color: $color-bg-line-pagination2;
+    
+          span {
+            background-color: $color-bg-bar-pagination2;
+            width: 30px;
+            &:hover {
+              background-color: peru;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }    
+  }
+  
+ 

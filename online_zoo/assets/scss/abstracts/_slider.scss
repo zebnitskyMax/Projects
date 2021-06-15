@@ -1,0 +1,317 @@
+.block-slider {
+  @include d-flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &.double-slider {
+    .slide-canvas li {
+      width: calc(5% - 20px);
+    }
+  }
+
+  &.quattro-slider {
+    .slide-canvas li {
+      width: calc(2.5% - 20px);
+    }
+  }
+
+  &.fivefold-slider {
+    .slide-canvas li {
+      width: calc(2% - 20px);
+    }
+  }
+
+  &.trio-slider {
+    .slide-canvas li {
+      width: calc(3.33% - 20px);
+    }
+  }
+
+  &.white-bg {
+
+    .slider-pagination {
+      color: $color-bg-line-pagination2;
+
+      p {
+        color: $color-text-dark;
+      }
+
+      .progress-bar {
+        background-color: $color-bg-line-pagination2;
+
+        span {
+          background-color: $color-bg-bar-pagination2;
+
+          &:hover {
+            background-color: peru;
+
+          }
+        }
+      }
+    }
+  }
+
+  &.black-bg {
+    .slider-pagination {
+      color: $color-text-light;
+
+      .progress-bar {
+        background-color: rgba(255, 255, 255, 0.5);
+
+        span {
+          background-color: $color-text-light;
+
+          &:hover {
+            background-color: peru;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+  }
+
+  .wrapper-slider {
+    overflow: hidden;
+    margin: 0 15px;
+    flex: 1;
+  }
+
+  .slide-canvas {
+    width: 1000%;
+    text-align: left;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      width: calc(10% - 20px);
+      margin: 5px 10px;
+      background: #FEFEFE;
+      box-shadow: 0px 0px 5px 1px rgba(34, 60, 80, .1);
+      border-radius: 5px;
+
+      &:hover {
+        transform: scale(.98, .98);
+        transition: .3s;
+        // background: rgb(151, 102, 10);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .pagination-wrapper {
+    width: 100%;
+
+    .slider-pagination {
+      margin: 0 auto;
+      display: block;
+
+      .progress-bar {
+        span {
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+.header-block-slider {
+  &.trio-slider {
+    .slide-canvas {
+      margin-left: 70px;
+
+      li {
+        margin: 5px 10px;
+        width: calc(3.8% - 20px);
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .pagination-wrapper {
+        .slider-pagination {
+          margin-right: 125px;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}
+
+.pets-block-slider {
+  img {
+    width: 100%;
+  }
+
+  .pagination-wrapper {
+    margin-top: 34px;
+
+    .slider-pagination {
+
+      .progress-bar {
+        margin-bottom: 33px;
+
+        span {
+          width: 30px;
+
+        }
+      }
+    }
+  }
+
+}
+
+.testimonials-slider {
+  margin-top: 63px;
+  margin-left: -38px;
+  margin-right: -38px;
+}
+
+.testimonials-block-slider {
+  li {
+    padding: 47px 47px 85px;
+
+    .face-card {
+      margin: 0 auto;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+
+      &.face-card1 {
+        background-image: url('../img/face-card1.svg');
+      }
+
+      &.face-card2 {
+        background-image: url('../img/face-card2.svg');
+      }
+
+
+
+    }
+
+    h3 {
+      @include font($size:20px, $l_height:23px, $font-color:$color-text-dark);
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    p {
+      @include font($size:14px, $l_height:16px, $font-color:$color-text-dark-p);
+      text-align: left;
+      margin-top: 18px;
+    }
+
+  }
+
+  .pagination-wrapper {
+
+    .slider-pagination {
+      margin-top: 45px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// round slider on the page Map and Zoos
+.circle-block-slider{
+  &.block-slider{
+    li {
+      border-radius: 50%;
+      overflow: hidden;
+      .wrapper-animals {
+        padding-top: 100%;
+        height: 0;
+        position: relative;
+    
+      }
+    
+      img {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+//-----------------------
+
+//------page map
+
+.favorites-block-slider {
+  margin-top: 35px;
+  &.block-slider {
+    .slide-canvas{
+      li{
+        width: calc(2% - 22px);
+        &:hover{
+          border: 4px solid peru;
+        }
+      }
+    }
+  }
+  .pagination-wrapper{
+    margin-top: 49px;
+    margin-bottom: 50px;
+  }
+}
+
+//--------- page zoos
+
+.vertical-block-slider{
+  &.block-slider{
+    display: block;
+    min-width: 140px;
+    margin-left: -135px;
+
+    .arrow-left{
+      transform: rotate(90deg);
+    }
+    .arrow-right{
+      transform: rotate(270deg);
+    }
+
+    .wrapper-slider{
+      height: 385px;
+    }
+
+    &.quattro-slider {
+      .slide-canvas li {
+        width: calc(100% - 20px);
+        
+      }
+    }
+
+    a{
+      display: block;
+    }
+    li{
+      display: block;
+      &:hover{
+        border: 3px solid peru;
+      }
+    }
+    
+  }
+
+  .arrow-left{
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  .arrow-right{
+    margin-top: 20px;
+  }
+  .slide-canvas {
+    width: 100%;
+  }
+}
