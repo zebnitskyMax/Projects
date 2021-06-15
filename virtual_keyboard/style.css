@@ -1,0 +1,84 @@
+body {
+    background: rgb(197, 186, 186);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 648px;
+
+}
+
+.form {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.textarea {
+    margin: 0;
+    padding: 0;
+    resize: none;
+    width: 98%;
+
+}
+
+.div_inner {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+#button {
+    padding: 10px 15px;
+    font-size: 12px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+}
+#button:hover{
+    background: rgb(168, 43, 35);
+    color: black;
+
+}
+
+#button.buttonspace {
+    font-size: 0;
+    width: 42%;
+    /* visibility: none; */
+}
+#button.buttonShift{
+    width: 14%;
+}
+#button.buttonCtrl{
+    width: 7%;
+    padding: 5px;
+}
+#button.buttonup{
+    width: 6%;
+    padding: 2px;
+}
+#button.buttonleft{
+    width: 5%;
+    padding: 1px;
+}
+#button.buttonright{
+    width: 5%;
+    padding: 1px;
+}
+#button.buttondown{
+    width: 6%;
+    padding: 2px;
+  
+}
+ 
+ 
