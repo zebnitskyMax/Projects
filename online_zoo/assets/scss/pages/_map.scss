@@ -1,0 +1,23 @@
+.you-favorites{
+    background-color: $color-bg-pageMap;
+    .map{
+        background-color: $color-bg-pageMap;
+    }
+}
+
+.favorites-wrapper{
+    width: 900px;
+    margin: 0 auto;
+
+    h2{
+        @include font($size:48px, $l_height:56px,$font-color:$color-text-dark);
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    p{
+        @include font($size:14px, $l_height:16px,$font-color:$color-text-dark-p);
+        margin-top: 20px;
+   }
+}
+

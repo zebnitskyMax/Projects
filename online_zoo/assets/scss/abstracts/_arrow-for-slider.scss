@@ -1,0 +1,22 @@
+.arrow-slider {
+    display: block;
+    mask: url('../img/arrow-slide.svg') no-repeat center;
+    height: 30px;
+    min-width: 18px;
+    mask-size: contain;
+    background-color: #828282;
+
+    &:hover {
+      background-color: peru;
+
+      transition: .3s;
+    }
+
+    &.arrow-left {
+      transform: scale(1.02);
+    }
+
+    &.arrow-right {
+      transform: rotate(180deg) scale(1.02);
+    }
+  }

@@ -1,0 +1,9 @@
+.header {
+    .header-wrapper {
+        .burger-menu {
+            @include desktop-mini {
+                display: none;
+            }
+        }
+    }
+}

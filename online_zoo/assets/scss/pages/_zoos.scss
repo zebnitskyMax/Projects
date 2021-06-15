@@ -1,0 +1,92 @@
+.zoos-webcamera {
+    background-color: $color-bg-favorites;
+}
+
+.zoos-webcamera-wrapper {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .vertical-block-slider {
+        margin-left: -150px;
+    }
+
+    .main-webvideo {
+        margin-left: 40px;
+        margin-right: 20px;
+
+        .main-video {
+            margin-bottom: 27px;
+        }
+
+        .slide-videos {
+            margin-bottom: 32px;
+            li {
+                display: inline-block;
+                margin-left: 13px;
+    
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+        .pagination{
+            list-style-type: circle;
+            list-style-position: inside;
+            text-align: center;
+            margin-bottom: 101px;
+            max-height: 60px;
+            
+            .dot-pagination{
+                display: inline-block;
+                a{
+                    font-size: 22px;
+                    padding: 10px;
+                    line-height: 60px;
+                    color:#C4C4C4;
+                    transition: .4s; 
+                    &:hover { 
+                        line-height: 60px;
+                        cursor: pointer;
+                        color: peru;
+                        font-size: 34px;
+                                
+                    }
+                }
+            }
+        }
+
+        h2 {
+            margin-top: 60px;
+            margin-bottom: 40px;
+            @include font($size:48px, $l_height:56px, $font-color:$color-text-dark);
+        }
+    }
+
+    .contant-zoos {
+        margin-top: 140px;
+        width: 35%;
+
+        h3 {
+            margin-top: 16px;
+            @include font($size:20px, $l_height:23px, $font-color:$color-text-dark);
+
+        }
+
+        p {
+            margin-top: 6px;
+            @include font($size:14px, $l_height:16px, $font-color:$color-text-dark-p);
+
+        }
+
+        .contant-zoos-btn {
+            padding: 16px 71px 16px 72px;
+            margin-top: 20px;
+        }
+    }
+
+    .list-webvideos {
+        margin-bottom: 32px;
+    }
+}
